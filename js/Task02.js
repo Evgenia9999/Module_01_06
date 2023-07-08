@@ -1,7 +1,10 @@
 let numCheck = +prompt('Введите положительное число');
 
-    if (((numCheck === 1) || (numCheck === 2))) {
+    if (numCheck === 2) {
         console.log('true');
+
+    } else if (numCheck === 1) {
+            console.log('false');
 
     } else {
         const isPrime = () => {
