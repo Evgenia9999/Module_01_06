@@ -1,10 +1,10 @@
 const isPrime = (num) => {
 
 if (num <= 1) {
-    console.log(false);
+    return false;
 
 } else if (num === 2) {
-    console.log(true);
+    return true;
     
 } else if (num > 2) {
 
@@ -13,20 +13,22 @@ if (num <= 1) {
         console.log(i);
     
         if (!(num % i)) {
-            const answ = false;
-            console.log(false);
-            break;
+            return false;
+    
         } else if (i === (num - 1)) {
     
-            console.log(true);
+            return true;
         }
     }
 }
-// return num > 1;
-
 }
 
-isPrime(5);
+console.log(isPrime(5));
+
+// const rez = isPrime(5);
+// console.log('rez: ', rez);
+
+
 
 
 
@@ -39,7 +41,7 @@ isPrime(5);
 //     }
 //     return num > 1;
 //     };
-    
+
 //     console.log(isPrime(2))
 
 
